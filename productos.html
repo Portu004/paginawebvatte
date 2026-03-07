@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos — Vatte.Store</title>
+    <meta name="description"
+        content="Catálogo completo de Vatte.Store: termos Stanley, vasos Quencher, combos, auriculares, vasos cerveceros y más. Encontrá tu producto ideal." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">Vatte<span>.Store</span></a>
+
+            <nav class="header__nav" id="nav">
+                <ul class="header__links">
+                    <li><a href="index.html" class="header__link">Inicio</a></li>
+                    <li><a href="productos.html" class="header__link active">Productos</a></li>
+                    <li><a href="index.html#nosotros" class="header__link">Nosotros</a></li>
+                    <li><a href="index.html#contacto" class="header__link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__search" id="searchWrapper">
+                <input type="text" class="header__search-input" id="searchInput" placeholder="Buscar productos..."
+                    aria-label="Buscar productos" />
+                <button class="header__search-btn" id="searchToggle" aria-label="Buscar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+            </div>
+
+            <button class="header__burger" id="burger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="section__tag">Catálogo completo</p>
+            <h1 class="section__title">Todos Nuestros Productos</h1>
+            <p class="section__subtitle">Explorá nuestra colección completa de termos, vasos, auriculares y accesorios.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== CATÁLOGO ========== -->
+    <section class="catalog" id="catalogo">
+        <div class="container">
+            <!-- Search results message -->
+            <p class="search-results-msg" id="searchResultsMsg" style="display:none;"></p>
+
+            <div class="catalog__grid" id="catalogGrid">
+                <!-- 1 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Termo Stanley Solo Clásico 1.4L">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Termo-Stanley-Solo.jpeg" alt="Termo Stanley Clásico" loading="lazy" />
+                        <span class="product-card__badge">Más Vendido</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Termo Stanley Solo Clásico 1.4L</h3>
+                        <p class="product-card__desc">El icónico termo Stanley que mantiene tus bebidas calientes y
+                        frías, Resistencia total.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>28.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20el%20Termo%20Stanley%20Clásico"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 2 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Vaso Cafetero C/Sensor de Temperatura Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Vaso-cafetero.jpeg" alt="Vaso cafetero stanley" loading="lazy" />
+                        <span class="product-card__badge badge--new">Nuevo</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Vaso Cafetero C/Sensor de Temperatura Stanley</h3>
+                        <p class="product-card__desc">El vaso favorito de las redes. Perfecto para smoothies, café
+                            helado o lo que quieras.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>28.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20el%20Vaso%20Cafetero%20Con%20Sensor"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 3 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Vaso Quencher Marmolado 1.2L Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Marmolado.jpeg" alt="Quencher Marmolado" loading="lazy" />
+                        <span class="product-card__badge badge--hot">🔥 Hot</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Vaso Quencher Marmolado 1.2L Stanley</h3>
+                        <p class="product-card__desc">Ideales para mantenerte hidratado todo el día en la oficina,
+                             en casa o de viaje, sin tener que recargar a cada rato.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>30.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20el%20vaso%20quencher%20marmolado"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 4 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Set Termo Bolita Stanley, Mate + Bombilla + Termo">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Temo-bolita2.jpeg" alt="Termo Bolita" loading="lazy" />
+                        <span class="product-card__badge badge--tech">Tech</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Set Termo Bolita Stanley, Mate + Bombilla + Termo</h3>
+                        <p class="product-card__desc">Olvidate de llevar el bolso matero pesado; con este equipo tenés todo resuelto y
+                            a mano para disfrutar de unos buenos mates en cualquier lado.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>32.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20el%20Set%20termo%20bolita%20Stanley"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 5 -->
+                <article class="product-card reveal catalog-card" data-search="Botella Sport 750ml Termica Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Botella-termica-750.jpeg" alt="Botella termica 750ml" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Botella Sport 750ml Termica Stanley</h3>
+                        <p class="product-card__desc">súper prácticas y con el diseño resistente de siempre.
+                            Son perfectas para llevar al gimnasio, la oficina, la facu o para tener en el auto.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>18.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Botella%20Sport%20750ml%20Stanley"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 6 -->
+                <article class="product-card reveal catalog-card" data-search="Set termo Stanley Clasico 1.4L, mate + bombilla">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Set-termo1.4L.jpeg" alt="Set termo 1.4L" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Set termo Stanley Clasico 1.4L, mate + bombilla</h3>
+                        <p class="product-card__desc">Es el tamaño perfecto para compartir unos buenos mates en familia,
+                             con amigos, o para que te rinda toda la tarde de estudio o trabajo.
+                        </p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>32.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Set%20Termo%20Stanley%201.4L"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 7 -->
+                <article class="product-card reveal catalog-card" data-search="Termo Stanley solo clasico 1.2L">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Termo-1.2L.jpeg" alt="Termo Stanley solo clasico 1.2L" loading="lazy" />
+                        <span class="product-card__badge badge--new">Nuevo</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Termo Stanley solo clasico 1.2L</h3>
+                        <p class="product-card__desc">Es el compañero de fierro que necesitás para llevar al trabajo, 
+                            a la facu o al parque, súper cómodo de transportar.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>26.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Termo%20Stanley%1.2L"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 8 -->
+                <article class="product-card reveal catalog-card" data-search="Termo Stanley colores pastel 1.2L">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/1.2L_Pastel.jpeg" alt="Termo Stanley colores pastel 1.2L" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Termo Stanley colores pastel 1.2L</h3>
+                        <p class="product-card__desc">paleta de colores pastel hermosa. Ideales para armar un equipo de mate súper
+                            original y llevar a la facu, al parque o la oficina.
+                        </p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>28.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Termos%20colores%20Pastel"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 9 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Autocebante 2 en 1 Stanley 750ml">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Autocebante.jpeg" alt="Autocebante 2 en 1 Stanley 750ml" loading="lazy" />
+                        <span class="product-card__badge badge--hot">🔥 Hot</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Autocebante 2 en 1 Stanley 750ml</h3>
+                        <p class="product-card__desc">Olvidate de llevar el termo por un lado y el mate por otro; con este sistema tenés todo resuelto
+                            en un solo producto. ¡Ideal para ir tomando mientras manejás o vas al trabajo!</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>28.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Autocebante%202en1%20Stanley"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 10 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="MateListo Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/MateListo.jpeg" alt="MateListo Stanley" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">MateListo Stanley</h3>
+                        <p class="product-card__desc">Diseñados especialmente para los fanáticos de nuestra infusión nacional,
+                            ya sea que prefieras unos buenos mates calientes a la mañana o un tereré bien helado a la tarde.
+                        </p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>26.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20MateListo%20Stanley"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 11 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Jarra Termica 1.5L Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Jarra.jpeg" alt="Jarra Termica 1.5L Stanley" loading="lazy" />
+                        <span class="product-card__badge badge--tech">Tech</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Jarra Termica 1.5L Stanley</h3>
+                        <p class="product-card__desc">Es el vaso/jarra definitivo para mantener tu hidratación al máximo durante
+                            todo el día o para lucirte en las juntadas con amigos.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>40.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Jarra%201.5L%20Stanley"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 12 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Vaso termico C/Sensor Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Vaso-termico.jpeg" alt="Vaso termico C/Sensor Stanley" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Vaso termico C/Sensor Stanley</h3>
+                        <p class="product-card__desc">Tienen un diseño hermoso, súper cómodo y tecnología integrada
+                            para que disfrutes tu bebida exacta como te gusta.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>24.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Vasos%20termico%20c/Sensor"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 13 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Vaso hoppie doble pico Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Hoppie.jpeg" alt="Vaso hoppie doble pico Stanley" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Vaso hoppie doble pico Stanley</h3>
+                        <p class="product-card__desc">Ideal para tomar cafe o usarlo como botella por su doble pico muy practico</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>24.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Vaso%20Hoppie%20DoblePico"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 14 -->
+                <article class="product-card reveal catalog-card" data-search="Botella termica Stanley 680ml">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/botella-680.jpeg" alt="Botella termica Stanley 680ml" loading="lazy" />
+                        <span class="product-card__badge">Más Vendido</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Botella termica Stanley 680ml</h3>
+                        <p class="product-card__desc">Ideal para llevar al gimnasio y mantener tu agua bien fria, muy buen tamaño ya que no ocupa
+                            mucho lugar
+                        </p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>21.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Botella%20Termica%20680ml"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 15 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Termo System Stanley 1.2L">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/System.jpeg" alt="Termo System Stanley 1.2L" loading="lazy" />
+                        <span class="product-card__badge badge--tech">Tech</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Termo System Stanley 1.2L</h3>
+                        <p class="product-card__desc">Ideal para no derramar ni una gota , Precision y calidad a la hora de servir tus mates</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>30.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Termo%20System%20Stanley"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 16 -->
+                <article class="product-card reveal catalog-card" data-search="Botella Stanley 1L">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Botella-1L.jpeg" alt="Botella Stanley 1L" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Botella Stanley 1L</h3>
+                        <p class="product-card__desc">Son súper livianas, prácticas y tienen el tamaño perfecto para que
+                            te acompañen todo el día en la facu, la oficina o el gym sin ocupar de más en la mochila.
+                        </p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>22.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Botella%20Stanley%201L"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 17 -->
+                <article class="product-card reveal catalog-card" data-search="Vaso Cervecero Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Cervecero.jpeg" alt="Vaso Cervecero Stanley" loading="lazy" />
+                        <span class="product-card__badge badge--new">Nuevo</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Vaso Cervecero Stanley</h3>
+                        <p class="product-card__desc">Tu cerveza helada por horas. Acero inoxidable con doble pared para
+                            máximo frío.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>25.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Vaso%20Cervecero%20Stanley"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 18 -->
+                <article class="product-card reveal catalog-card" data-search="Botellitas Termicas Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Botellita.jpeg" alt="Botellitas Termicas Stanley" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Botellitas Termicas Stanley</h3>
+                        <p class="product-card__desc">El tamaño y diseño perfectos para acompañarte al gimnasio,
+                            a correr, a andar en bici o para llevar en la mochila a la facu.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>24.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Botellitas%20termicas%20Stanley"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 19 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Set de Terere termico Stanley">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Termo-terere.jpeg" alt="Set de Terere termico Stanley" loading="lazy" />
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Set de Terere termico Stanley</h3>
+                        <p class="product-card__desc">Ideal para Mantener el frio de tus bebidas durante horas y excelente calidad</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>40.000</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Set%20terere%20termico"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 20 -->
+                <article class="product-card reveal catalog-card"
+                    data-search="Auricular Bluetooth P9 Pro">
+                    <div class="product-card__img-wrapper">
+                        <img src="images/Auris.jpeg" alt="Auricular Bluetooth P9 Pro" loading="lazy" />
+                        <span class="product-card__badge badge--hot">🔥 Hot</span>
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">Auricular Bluetooth P9 Pro</h3>
+                        <p class="product-card__desc">Tienen una estética increíble, son súper cómodos y te dan
+                            la mejor calidad de sonido para entrenar, estudiar, viajar o simplemente relajarte.</p>
+                        <p class="product-card__price"><span class="product-card__price-currency">$</span>12.500</p>
+                        <div class="product-card__footer">
+                            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20Auricular%20Bluetooth%20P9_PRO"
+                                class="btn btn--outline btn--sm" target="_blank" rel="noopener">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO CTA ========== -->
+    <section class="contact" id="contacto">
+        <div class="container contact__inner reveal">
+            <div class="contact__text">
+                <p class="section__tag">¿Te interesa algo?</p>
+                <h2 class="section__title section__title--left">Consultanos por WhatsApp</h2>
+                <p class="contact__desc">Escribinos y te asesoramos al instante sobre cualquier producto.</p>
+            </div>
+            <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20productos%20de%20Vatte.Store"
+                class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                Abrir WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo">Vatte<span>.Store</span></a>
+                <p class="footer__tagline">Tu estilo, tu temperatura.</p>
+            </div>
+            <div class="footer__links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <h4>Seguinos</h4>
+                <div class="footer__social-icons">
+                    <a href="https://www.instagram.com/vatte.store/" aria-label="Instagram" class="footer__social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@vatte.store?_r=1&_t=ZS-94GDP3QP43E" aria-label="TikTok"
+                        class="footer__social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.11a8.16 8.16 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.54z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Vatte.Store — Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/5491160320523?text=Hola!%20Quiero%20consultar%20por%20productos%20de%20Vatte.Store"
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
